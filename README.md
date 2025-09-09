@@ -1,5 +1,7 @@
 # Dice Roll Simulator
 
+Live at [https://mdmohsinhaider.github.io/Dice-Roll-Simulator/](https://mdmohsinhaider.github.io/Dice-Roll-Simulator/)
+
 A simple and interactive Dice Roll Simulator built with HTML, CSS, and JavaScript. The project features a graphic dice that can be rolled with a click, showing a random face along with a smooth animation. It also dynamically changes background images based on the dice face.
 
 ## Features

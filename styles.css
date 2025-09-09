@@ -1,0 +1,70 @@
+    body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('https://i.pinimg.com/1200x/26/4e/16/264e163d5e006d5806f4c8bf74376b5b.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;  /* remove default margin */
+    }
+
+    #dice {
+    width: 350px;
+    height: 350px;
+    margin-bottom: 20px;
+    transition: transform 0.6s ease;
+    border-radius: 30px;
+    }
+
+    #dice.roll {
+    animation: roll-spin 0.6s ease;
+    }
+
+    @keyframes roll-spin {
+    0%   { transform: rotate(0deg) scale(1); }
+    50%  { transform: rotate(360deg) scale(1.2); }
+    100% { transform: rotate(720deg) scale(1); }
+    }
+
+    button {
+    background: #007bff;
+    border: none;
+    color: white;
+    padding: 16px 28px;
+    font-size: 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    }
+
+    button:hover {
+    background: #0056b3;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+    #dice {
+        width: 200px;
+        height: 200px;
+    }
+    button {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    }
+
+    @media (max-width: 480px) {
+    #dice {
+        width: 150px;
+        height: 150px;
+    }
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    body {
+        height: auto;
+        padding: 20px;
+    }
+    }
